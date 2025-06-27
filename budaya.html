@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <title>Budaya Indonesia</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="bg-indonesia">
+  <a href="index.html" class="back-to-home">Kembali ke Beranda</a>
+  <header>
+    <h1>Indonesian Provincial Heritage</h1>
+    <nav>
+      <h>Menjelajahi Beberapa Provinsi Di Indonesia</h>
+      <ul>
+        <li><a href="Tentang.html">Tentang Kami</a></li>
+        <li><a href="kuliner.html">Daftar Kuliner</a></li>
+        <li><a href="provinsi.html">Provinsi</a></li>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="budaya.html" class="active">Budaya</a></li>
+        <li><a href="sejarah.html">Kisah Sejarah</a></li>
+        <li><a href="ulasan.html">Ulasan</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section aktif">
+    <h2>Budaya</h2>
+    <p>Klik nama provinsi</p>
+
+    <div class="daftar-provinsi">
+      <button onclick="tampilkanBudaya('aceh')">Aceh</button>
+      <button onclick="tampilkanBudaya('sumbar')">Sumatera Barat</button>
+      <button onclick="tampilkanBudaya('sumut')">Sumatera Utara</button>
+      <button onclick="tampilkanBudaya('jateng')">Jawa Tengah</button>
+      <button onclick="tampilkanBudaya('banten')">Banten</button>
+      <button onclick="tampilkanBudaya('jabar')">Jawa Barat</button>
+      <button onclick="tampilkanBudaya('sulsel')">Sulawesi Selatan</button>
+      <button onclick="tampilkanBudaya('bali')">Bali</button>
+      <button onclick="tampilkanBudaya('papua')">Papua</button>
+    </div>
+    <!-- Budaya Aceh -->
+<div id="budaya-aceh" class="konten-budaya" style="display:none;">
+      <h2>Aceh</h2>
+      <div class="budaya-list">
+        <div class="budaya-item">
+        <img src="image/Tari Saman, Aceh.jpeg" alt="Tari Saman">
+        <h4 class="judul-item">Tari Saman</h4>
+        <p>Tarian duduk yang dilakukan secara berkelompok,penuh semangat dan kecepatan,sering dipertunjukkan dalam acara adat.</p>
+        </div>
+  <div class="budaya-item">
+     <img src="image/Tari Likok Pulo.jpeg" alt="Tari Likok Pulo"/>
+     <h4 class="judul-item">Tari Likok Pulo</h4>
+     <p>Tarian khas dari Pulo Aceh,biasanya dibawakan oleh laki-laki.</p>
+     </div>
+  <div class="budaya-item">
+     <img src="image/khanduri blang.jpg" alt="Khanduri"/>
+     <h4 class="judul-item">Khanduri</h4>
+     <p>Tradisi kenduri atau jamuan makan dalam berbagai acara.</p>
+     </div>
+  </div>
+</div>
+
+<!-- budaya Provinsi sumatera barat -->
+  <div id="budaya-sumbar" class="konten-budaya" style="display:none;">
+    <h2>Sumatera Barat</h2>
+    <div class="budaya-list">
+    <div class="budaya-item">
+     <img src="image/Tari Piring.jpeg" alt="Tari Piring"/>
+     <h4 class="judul-item">Tari Piring</h4>
+     <p>Penari membawa piring di tangan sambil menari cepat. Tari ini sering ditampilkan saat pesta adat atau penyambutan tamu.</p>
+     </div>
+  <div class="budaya-item">
+     <img src="image/Talempong.jpeg" alt="Talempong"/>
+     <h4 class="judul-item">Talempong</h4>
+     <p>Talempong merupakan gong kecil yang merupakan asal muasal nama talempong yang terdiri dari empat atau lima talempong beserta gong dan gendang lainnya .</p>
+     </div>
+  <div class="budaya-item">
+     <img src="image/pakaian adat sumatera barat.jpg" alt="Pakaian Adat"/>
+     <h4 class="judul-item">Pakaian Adat</h4>
+     <p>Pakaian adat Sumatera Barat memiliki desain yang unik dan menarik. Di antara ragam pakaian adat di Indonesia, pakaian adat Sumatera Barat ini menjadi salah satu yang paling mencolok dan mudah dikenali.</p>
+    </div>
+   </div>
+</div>
+
+<!-- budaya Provinsi sumatera utara -->
+  <div id="budaya-sumut" class="konten-budaya" style="display:none;">
+    <h2>Sumatera Utara</h2>
+     <div class="budaya-list">
+     <div class="budaya-item">
+    <img src="image/Tortor - Wikiwand.jpeg" alt="Tari Tor Tor"/>
+    <h4 class="judul-item">Tari Tor Tor</h4>
+    <p>Tarian suku Batak yang dilakukan dalam acara adat, pernikahan, kematian, dan penyambutan tamu.</p>
+    </div>
+  <div class="budaya-item">
+    <img src="image/gondang 1.jpeg" alt="Gondang"/>
+    <h4 class="judul-item">Gondang</h4>
+    <p>Musik Batak menggunakan alat musik tradisional seperti gondang sabangunan, taganing, hasapi, dan suling.</p>
+    </div>
+  <div class="budaya-item">
+    <img src="image/baju ulos.jpeg" alt="Baju Ulos"/>
+    <h4 class="judul-item">Baju Ulos</h4>
+    <p>Ulos dikenakan dalam pernikahan, kelahiran, kematian, dan simbol kasih sayang.</p>
+    </div>
+   </div>
+</div>
+
+<!-- budaya Provinsi jateng -->
+  <div id="budaya-jateng" class="konten-budaya" style="display:none;">
+    <h2>Jawa Tengah</h2>
+    <div class="budaya-list">
+    <div class="budaya-item">
+    <img src="image/Wayang kulit from Indonesia.jpeg" alt="Wayang Kulit"/>
+    <h4 class="judul-item">Wayang Kulit</h4>
+    <p>Wayang adalah teater boneka tradisional Indonesia .Wayang adalah bentuk kuno dari cerita yang dikenal karena boneka yang rumit dan gaya musik yang kompleks.</p>
+    </div>
+  <div class="budaya-item">
+    <img src="image/gambyong-tari.jpg" alt="Tari Gambyong"/>
+    <h4 class="judul-item">Tari Gambyong</h4>
+    <p>Gambyong merupakan salah satu tari tradisional Jawa yang berasal dari Surakarta, Jawa Tengah, Indonesia. Tari ini sudah ada sejak zaman dahulu, dan mulai ditampilkan di Keraton Mangkunegaran pada era 1916 hingga 1944.</p>
+    </div>
+  <div class="budaya-item">
+    <img src="image/Gamelan.jpeg" alt="Gamelan"/>
+    <h4 class="judul-item">Gamelan</h4>
+    <p>Gamelan Jawa Barat, yang dikenal dengan sebutan Gamelan Degung, merupakan salah satu ensambel musik tradisional khas masyarakat Sunda. Gamelan ini memiliki suara yang lembut dan mendayu, serta menggunakan sistem laras pelog degung yang membedakannya dari gamelan Jawa Tengah maupun Bali.</p>
+    </div>
+   </div>
+</div>
+
+<!-- budaya Provinsi banten -->
+ <div id="budaya-banten" class="konten-budaya" style="display:none;">
+    <h2>Banten</h2>
+    <div class="budaya-list">
+  <div class="budaya-item">
+    <img src="image/Tari Rampak Bedug.JPG" alt="Rampak Bedug"/>
+    <h4 class="judul-item">Rampak Bedug</h4>
+    <p>Pertunjukan memukul bedug besar secara serempak dan ritmis.Sering dipentaskan dalam festival budaya dan hari besar Islam.</p>
+    </div>
+  <div class="budaya-item">
+    <img src="image/Tari Topeng.jpeg" alt="Tari Topeng"/>
+    <h4 class="judul-item">Tari Topeng</h4>
+    <p>penari memakai topeng dan mengisahkan cerita rakyat.</p>
+    </div>
+  <div class="budaya-item">
+     <img src="image/Seba Baduy.jpeg" alt="Seba Baduy"/>
+     <h4 class="judul-item">Seba Baduy</h4>
+    <p>tradisi tahunan suku Baduy berjalan kaki dari desa ke pusat pemerintahan Serang untuk menyerahkan hasil bumi sebagai tanda hormat.</p>
+    </div>
+   </div>
+</div>
+
+<!-- budaya Provinsi jabar -->
+  <div id="budaya-jabar" class="konten-budaya" style="display:none;">
+    <h2>Jawa Barat</h2>
+    <div class="budaya-list">
+    <div class="budaya-item">
+     <img src="image/Tari Jaipong.jpeg" alt="Tari Jaipong"/>
+     <h4 class="judul-item">Tari Jaipong</h4>
+     <p>gerak enerjik dan lincah, campuran tradisi dan modern. Populer di acara hajatan atau penyambutan.</p>
+     </div>
+  <div class="budaya-item">
+     <img src="image/Wayang Golek - Sculpture Puppet Show.jpeg" alt="Wayang Golek"/>
+     <h4 class="judul-item">Wayang Golek</h4>
+     <p>boneka kayu yang dimainkan dalang dengan cerita dari Mahabharata, Ramayana, dan kisah lokal.</p>
+     </div>
+  <div class="budaya-item">
+     <img src="image/angklung.jpeg" alt="Angklung"/>
+     <h4 class="judul-item">Angklung</h4>
+     <p>alat musik dari bambu yang dimainkan dengan cara digoyang.</p>
+     </div>
+   </div>
+</div>
+
+<!-- budaya Provinsi sulsel -->
+  <div id="budaya-sulsel" class="konten-budaya" style="display:none;">
+    <h2>Sulawesi Selatan</h2>
+    <div class="budaya-list">
+    <div class="budaya-item">
+     <img src="image/Tari Pakarena.jpeg" alt="Tari Pakarena"/>
+     <h4 class="judul-item">Tari Pakarena</h4>
+     <p>tarian wanita lemah lembut, penuh simbol kesetiaan dan penghormatan.</p>
+     </div>
+  <div class="budaya-item">
+     <img src="image/kecapi.jpeg" alt="Kecapi"/>
+     <h4 class="judul-item">Kecapi</h4>
+     <p>Merupakan alat musik petik dari Sulawesi Selatan khususnya suku  Bugis. Kecapi  biasanya ditampilkan pada acara penjemputan para tamu, perkawinan, hajatan, bahkan hiburan pada hari ulang tahun.</p>
+     </div>
+  <div class="budaya-item">
+     <img src="image/rambu tuka 2.jpg" alt="Rambu Tuka"/>
+     <h4 class="judul-item">Rambu Tuka</h4>
+     <p>upacara syukuran saat rumah baru selesai dibangun.</p>
+     </div>
+   </div>
+ </div>
+
+<!-- budaya Provinsi bali -->
+  <div id="budaya-bali" class="konten-budaya" style="display:none;">
+    <h2>Bali</h2>
+    <div class="budaya-list">
+     <div class="budaya-item">
+     <img src="image/wayang kulit bali.jpg" alt="Wayang Kulit Bali"/>
+     <h4 class="judul-item">Wayang Kulit Bali</h4>
+     <p>memiliki gaya dan cerita khas yang berbeda dari Jawa.</p>
+     </div>
+  <div class="budaya-item">
+     <img src="image/bali kecak.jpeg" alt="Tari Kecak"/>
+     <h4 class="judul-item">Tari Kecak</h4>
+     <p>Tanpa musik, hanya irama "cak" dari puluhan penari pria; menceritakan Ramayana.</p>
+     </div>
+  <div class="budaya-item">
+     <img src="image/ngaben.jpeg" alt="Ngaben"/>
+     <h4 class="judul-item">Ngaben</h4>
+     <p>upacara pembakaran jenazah sebagai proses penyucian roh menuju reinkarnasi.</p>
+  </div>
+  </div>
+ </div>
+
+ <!-- budaya Provinsi papua -->
+  <div id="budaya-papua" class="konten-budaya" style="display:none;">
+    <h2>Papua</h2>
+    <div class="budaya-list">
+    <div class="budaya-item">
+     <img src="image/Upacara Adat Papua Bakar Batu.jpg" alt="Upacara Bakar Batu"/>
+     <h4 class="judul-item">Upacara Bakar Batu</h4>
+     <p>Bakar Batu adalah tradisi memasak bersama dengan cara membakar batu untuk memanggang daging dan umbi-umbian.</p>
+     </div>
+  <div class="budaya-item">
+     <img src="image/Pikon.jpg" alt="Pikon"/>
+     <h4 class="judul-item">Pikon</h4>
+     <p>Alat musik tiup dari bambu kecil, dimainkan oleh suku Dani. Menghasilkan suara mirip siulan burung.</p>
+     </div>
+  <div class="budaya-item">
+     <img src="image/Noken.jpg" alt="Tradisi Noken"/>
+     <h4 class="judul-item">Tradisi Noken</h4>
+     <p>Noken adalah tas rajutan khas Papua yang dibuat dari serat kayu atau kulit pohon. Dipakai di kepala atau pundak.Simbol kehidupan dan kedewasaan perempuan.</p>
+  </div>
+  </div>
+ </div>
+ </section>
+
+  <a href="https://wa.me/6283808627449" class="wa-float" target="_blank">
+  <img src="image/whatsapp-logo-png-hd-2.png" alt="WhatsApp">
+</a>
+
+  <footer>
+    <p>Indonesian Provincial Heritage</p>
+  </footer>
+</body>
+</html>

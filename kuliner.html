@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kuliner Khas Daerah</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body class="bg-indonesia">
+    <a href="index.html" class="back-to-home">Kembali ke Beranda</a>
+  <header>
+    <h1>Indonesian Provincial Heritage</h1>
+    <nav>
+      <h>Menjelajahi Beberapa Provinsi Di Indonesia</h>
+      <ul>
+        <li><a href="Tentang.html">Tentang Kami</a></li>
+        <li><a href="kuliner.html" class="active">Daftar Kuliner</a></li>
+        <li><a href="provinsi.html">Provinsi</a></li>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="budaya.html">Budaya</a></li>
+        <li><a href="sejarah.html">Kisah Sejarah</a></li>
+        <li><a href="ulasan.html">Ulasan</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section aktif">
+    <h2>Daftar Kuliner</h2>
+    <p>Klik nama provinsi</p>
+    <div class="daftar-provinsi">
+     <button onclick="tampilkanKuliner('aceh')">Aceh</button>
+    <button onclick="tampilkanKuliner('sumbar')">Sumatera Barat</button>
+    <button onclick="tampilkanKuliner('sumut')">Sumatera Utara</button>
+    <button onclick="tampilkanKuliner('jateng')">Jawa Tengah</button>
+    <button onclick="tampilkanKuliner('Banten')">Banten</button>
+    <button onclick="tampilkanKuliner('jabar')">Jawa Barat</button>
+    <button onclick="tampilkanKuliner('sulsel')">Sulawesi Selatan</button>
+    <button onclick="tampilkanKuliner('bali')">Bali</button>
+    <button onclick="tampilkanKuliner('papua')">Papua</button>
+    </div>
+
+    <!-- Provinsi aceh -->
+  <div id="kuliner-aceh" class="konten-kuliner" style="display:none;">
+    <h2>Aceh</h2>
+    <div class="kuliner-list"> 
+    <div class="kuliner-item">
+      <img src="image/Mie Aceh, Khas Aceh.jpg" alt="Mie Aceh">
+       <h4 class="judul-item">Mie Aceh</h4>
+      <p>Mie berwarna kuning tebal dengan cita rasa pedas dan kaya rempah. Disajikan dengan daging sapi, kambing, atau seafood.</p>
+    </div> 
+    <div class="kuliner-item">
+      <img src="image/Kue Timpan, Khas Aceh.jpg" alt="Kue Timphan">
+      <h4 class="judul-item">Kue Timphan</h4>
+      <p>Kue tradisional berbahan dasar pisang yang dibungkus daun pisang dan dikukus.</p>
+    </div>
+    <div class="kuliner-item">
+      <img src="image/eungkot keumamah.avif" alt="Eungkot Keumamah">
+      <h4 class="judul-item">Eungkot Keumamah</h4>
+      <p>Olahan ikan tongkol yang dikeringkan, kemudian dimasak kembali dengan bumbu khas Aceh.</p>
+    </div>
+    </div>
+    </div>
+
+<!-- Provinsi sumatera barat -->
+  <div id="kuliner-sumbar" class="konten-kuliner" style="display:none;">
+    <h2>Sumatera Barat</h2>
+    <div class="kuliner-list"> 
+    <div class="kuliner-item">
+      <img src="image/rendang.jpg" alt="Rendang">
+      <h4 class="judul-item">Rendang</h4>
+      <p>Masakan kaya rempah khas Minangkabau.</p>
+    </div>
+<div class="kuliner-item">
+      <img src="image/Balado ikan seluang.jpg" alt="Balado Ikan seluang">
+      <h4 class="judul-item">Balado Ikan seluang</h4>
+      <p>Ikan goreng disiram sambal cabai merah pedas ala Minang.</p>
+      </div> 
+ <div class="kuliner-item">
+      <img src="image/Dendeng balado.jpg" alt="Dendeng Balado">
+       <h4 class="judul-item">Dendeng Balado</h4>
+      <p>Daging sapi yang diiris tipis dan digoreng kering, lalu disiram sambal balado pedas. </p>
+    </div>
+    </div>
+  </div>
+
+
+<!-- Provinsi sumatera utara -->
+  <div id="kuliner-sumut" class="konten-kuliner" style="display:none;">
+    <h2>Sumatera Utara</h2>
+    <div class="kuliner-list"> 
+    <div class="kuliner-item">
+      <img src="image/bika-ambon.jpg" alt="Bika Ambon">
+      <h4 class="judul-item">Bika Ambon</h4>
+      <p>Kue khas Medan berwarna kuning dengan tekstur berserat dan kenyal.</p>
+    </div>
+  <div class="kuliner-item">
+      <img src="image/naniura khas batak.webp" alt="Naniura">
+      <h4 class="judul-item">Naniura</h4>
+      <p>Ikan mas mentah yang diasamkan dengan jeruk jungga dan diberi bumbu rempah.</p>
+     </div>
+  <div class="kuliner-item">
+      <img src="image/Lemang.jpg" alt="Lemang">
+      <h4 class="judul-item">Lemang</h4>
+      <p>Beras ketan dimasak dalam bambu bersama santan, dibakar di atas bara api.</p>
+    </div>
+    </div>
+    </div>
+
+  
+<!-- Provinsi jawa tengah -->
+  <div id="kuliner-jateng" class="konten-kuliner" style="display:none;">
+    <h2>Jawa Tengah</h2>
+    <div class="kuliner-list"> 
+    <div class="kuliner-item">
+      <img src="image/gudeg.jpg" alt="Gudeg">
+      <h4 class="judul-item">Gudeg</h4>
+      <p>Nangka muda manis khas Yogyakarta.</p>
+    </div>
+    <div class="kuliner-item">
+      <img src="image/Garang Asem.jpg" alt="Garang Asem">
+      <h4 class="judul-item">Garang Asem</h4>
+      <p>Ayam dimasak dengan santan encer, belimbing wuluh, dan bumbu rempah, dibungkus daun pisang lalu dikukus.</p>
+    </div>
+    <div class="kuliner-item">
+      <img src="image/Soto kudus.jpg" alt="Soto Kudus">
+      <h4 class="judul-item">Soto Kudus</h4>
+      <p>Soto khas Kudus dengan kuah bening, daging ayam atau kerbau, dan tauge. Disajikan dalam mangkuk kecil.</p>
+    </div>
+    </div>
+  </div>
+
+
+<!-- Provinsi banten -->
+  <div id="kuliner-Banten" class="konten-kuliner" style="display:none;">
+    <h2>Banten</h2>
+    <div class="kuliner-list"> 
+    <div class="kuliner-item">
+    <img src="image/Rabeg Khas banten.jpg" alt="Rabeg">
+    <h4 class="judul-item">Rabeg</h4>
+    <p>Daging kambing dengan kuah manis-pedas khas Serang.</p>
+  </div>
+  <div class="kuliner-item">
+    <img src="image/Sate Bandeng.jpg" alt="Sate Bandeng">
+    <h4 class="judul-item">Sate Bandeng</h4>
+    <p>Bandeng tanpa duri yang dibumbui dan dipanggang.</p>
+  </div>
+  <div class="kuliner-item">
+    <img src="image/kue jojorong.jpg" alt="Kue Jojorong">
+    <h4 class="judul-item">Kue Jojorong</h4>
+    <p>Kue basah dari santan dan gula merah dalam daun pisang.</p>
+  </div>
+  </div>
+ </div>
+
+  
+<!-- Provinsi jawa barat -->
+  <div id="kuliner-jabar" class="konten-kuliner" style="display:none;">
+  <h2>Jawa Barat</h3>
+  <div class="kuliner-list"> 
+  <div class="kuliner-item">
+    <img src="image/karedok.jpg" alt="Karedok">
+    <h4 class="judul-item">Karedok</h4>
+    <p>Sayuran mentah disiram sambal kacang mentah khas Bandung.</p>
+  </div>
+  <div class="kuliner-item">
+    <img src="image/Tahu-Gejrot.jpg" alt="Tahu Gejrot">
+    <h4 class="judul-item">Tahu Gejrot</h4>
+    <p>Tahu Gejrot Tahu goreng dengan kuah asam manis pedas dari Cirebon.</p>
+  </div>
+  <div class="kuliner-item">
+    <img src="image/serabi1.jpg" alt="Surabi Bandung">
+    <h4 class="judul-item">Surabi Bandung</h4>
+    <p>Pancake tradisional dari tepung beras, dengan topping manis atau asin.</p>
+  </div>
+  </div>
+ </div>
+
+  
+<!-- Provinsi Sulawesi Selatan -->
+  <div id="kuliner-sulsel" class="konten-kuliner" style="display:none;">
+  <h2>Sulawesi Selatan</h2>
+  <div class="kuliner-list"> 
+  <div class="kuliner-item">
+    <img src="image/Coto Makassar.jpg" alt="Coto Makassar">
+    <h4 class="judul-item">Coto Makassar</h4>
+    <p>Sup jeroan sapi dengan kuah kacang khas Makassar, disajikan dengan ketupat.</p>
+  </div>
+  <div class="kuliner-item">
+    <img src="image/pallubasa.jpg" alt="Pallubasa">
+    <h4 class="judul-item">Pallubasa</h4>
+    <p>Sup daging dan jeroan sapi dengan serundeng, khas Makassar.</p>
+  </div>
+  <div class="kuliner-item">
+    <img src="image/barongko..jpg" alt="Barongko">
+    <h4 class="judul-item">Barongko</h4>
+    <p>Pisang kukus dengan santan dan telur dalam daun pisang, makanan penutup tradisional Bugis.</p>
+  </div>
+  </div>
+</div>
+
+<!-- Provinsi Bali -->
+ <div id="kuliner-bali" class="konten-kuliner" style="display:none;">
+    <h2>Bali</h2>
+    <div class="kuliner-list"> 
+    <div class="kuliner-item">
+      <img src="image/Ayam betutu .jpg" alt="Ayam Betutu">
+      <h4 class="judul-item">Ayam Betutu</h4>
+      <p>Ayam berbumbu khas Bali.</p>
+    </div>
+   <div class="kuliner-item">
+    <img src="image/sate lilit.jpg" alt="Sate Lilit">
+    <h4 class="judul-item">Sate Lilit</h4>
+    <p>Daging cincang berbumbu yang dililitkan pada batang serai lalu dibakar.</p>
+  </div>
+  <div class="kuliner-item">
+    <img src="image/lawar bali.jpg" alt="Lawar">
+    <h4 class="judul-item">Lawar</h4>
+    <p>Campuran daging, kelapa, dan bumbu khas Bali, kadang menggunakan darah sebagai penyedap.</p>
+  </div>
+  </div>
+ </div>
+
+ <!-- Provinsi Papua -->
+  <div id="kuliner-papua" class="konten-kuliner" style="display:none;">
+    <h2>Papua</h2>
+    <div class="kuliner-list"> 
+    <div class="kuliner-item">
+      <img src="image/Papeda Papua.jpeg" alt="Papeda">
+      <h4 class="judul-item">Papeda</h4>
+      <p>Papeda adalah makanan pokok masyarakat Papua dan Maluku yang terbuat dari sagu. Teksturnya kental dan lengket seperti lem, berwarna putih bening, dan tidak berasa. Papeda biasanya disajikan dengan ikan kuah kuning yang gurih, serta sayuran seperti bunga pepaya atau kangkung.</p>
+      </div>
+  <div class="kuliner-item">
+    <img src="image/Ikan Bakar Manokwari.jpeg" alt="Ikan Bakar Manokwari">
+    <h4 class="judul-item">Ikan Bakar Manokwari</h4>
+    <p>Ikan Bakar Manokwari adalah sajian ikan laut (biasanya tongkol atau cakalang) yang dibakar dan disajikan dengan sambal khas Manokwari yang dibuat dari cabai rawit, bawang merah, dan jeruk nipis.</p>
+    </div>
+  <div class="kuliner-item">
+    <img src="image/Udang Selingkuh1.jpeg" alt="Udang Selingkuh">
+    <h4 class="judul-item">Udang Selingkuh</h4>
+    <p>Udang Selingkuh merupakan udang air tawar endemik dari Wamena yang memiliki capit menyerupai kepiting atau lobster. Disebut “selingkuh” karena bentuknya seperti hasil “perselingkuhan” udang dan kepiting.</p>
+    </div>
+  </div>
+ </div>
+ </section>
+
+ <a href="https://wa.me/6283808627449" class="wa-float" target="_blank">
+  <img src="image/whatsapp-logo-png-hd-2.png" alt="WhatsApp">
+</a>
+
+  <footer>
+    <p>Indonesian Provincial Heritage</p>
+  </footer>
+</body>
+</html>

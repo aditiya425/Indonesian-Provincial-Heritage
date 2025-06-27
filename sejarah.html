@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kisah Sejarah</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body class="bg-indonesia">
+    <a href="index.html" class="back-to-home">Kembali ke Beranda</a>
+  <header>
+    <h1>Indonesian Provincial Heritage</h1>
+    <nav>
+      <h>Menjelajahi Beberapa Provinsi Di Indonesia</h>
+      <ul>
+        <li><a href="Tentang.html">Tentang Kami</a></li>
+        <li><a href="kuliner.html">Daftar Kuliner</a></li>
+        <li><a href="provinsi.html">Provinsi</a></li>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="budaya.html">Budaya</a></li>
+        <li><a href="sejarah.html" class="active">Kisah Sejarah</a></li>
+        <li><a href="ulasan.html">Ulasan</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="section aktif">
+    <h2>Kisah Sejarah</h2>
+    <p>Klik nama provinsi</p>
+
+    <div class="daftar-provinsi">
+      <button onclick="tampilkanKisahsejarah('aceh')">Aceh</button>
+      <button onclick="tampilkanKisahsejarah('sumbar')">Sumatera Barat</button>
+      <button onclick="tampilkanKisahsejarah('sumut')">Sumatera Utara</button>
+      <button onclick="tampilkanKisahsejarah('jateng')">Jawa Tengah</button>
+      <button onclick="tampilkanKisahsejarah('banten')">Banten</button>
+      <button onclick="tampilkanKisahsejarah('jabar')">Jawa Barat</button>
+      <button onclick="tampilkanKisahsejarah('sulsel')">Sulawesi Selatan</button>
+      <button onclick="tampilkanKisahsejarah('bali')">Bali</button>
+      <button onclick="tampilkanKisahsejarah('papua')">Papua</button>
+    </div>
+
+    <!-- Kisah sejarah provinsi ACEH -->
+    <div id="kisahsejarah-aceh" class="konten-sejarah" style="display:none;">
+      <h2>Aceh</h2>
+      <div class="kisahsejarah-list">
+      <div class="kisahsejarah-item">
+      <img src="image/suktan iskandar muda.jpeg" alt="Sultan iskandar mudah" />
+      <p><h1>Sultan iskandar mudah</h1>Sultan Iskandar Muda adalah salah satu tokoh penting dalam sejarah Aceh yang memerintah Kesultanan Aceh pada abad ke-17. Di bawah kepemimpinannya, Aceh mencapai puncak kejayaannya sebagai pusat perdagangan dan kekuatan maritim di Asia Tenggara.</p>
+      </div>
+    <div class="kisahsejarah-item">
+      <img src="image/perang aceh.jpeg" alt="Perang Aceh" />
+      <p><h1>Perang Aceh</h1>Perang Aceh (1873–1904) merupakan perjuangan rakyat Aceh melawan penjajahan Belanda. Perang ini dikenal sebagai salah satu perlawanan terpanjang dalam sejarah kolonial di Indonesia dan menjadi simbol semangat juang masyarakat Aceh.</p>
+      </div>
+    <div class="kisahsejarah-item">
+       <img src="image/Cut Nyak Dhien Pahlawan Wanita Dari Aceh.jpeg" alt="Cut Nyak Dhien" />
+       <p><h1>Cut Nyak Dhien</h1>Cut Nyak Dhien adalah pahlawan nasional yang berjuang melawan Belanda setelah kematian suaminya, Teuku Umar. Ia dikenal karena keberaniannya dan keteguhannya membela tanah kelahirannya hingga akhir hayatnya.</p>
+       </div>
+      </div>
+    </div>
+
+  <!-- Kisah sejarah provinsi sumatera barat  -->
+  <div id="kisahsejarah-sumbar" class="konten-sejarah" style="display:none;">
+    <h2>Sumatera Barat</h2>
+    <div class="kisahsejarah-list">
+      <div class="kisahsejarah-item">
+      <img src="image/perang padri.jpeg" alt="Perang Padri" />
+      <p><h1>Perang Padri</h1>Perang Padri (1803–1837) adalah konflik antara kaum ulama (Padri) dan kaum adat di Minangkabau. Perang ini kemudian melibatkan Belanda dan menjadi simbol perlawanan rakyat Sumbar terhadap kolonialisme.</p>
+      </div>
+    <div class="kisahsejarah-item">
+      <img src="image/Tuanku imam bonjol.jpeg" alt="Tuanku Imam Bonjol" />
+      <p><h1>Tuanku Imam Bonjol</h1>Tokoh utama dalam Perang Padri, dikenal karena keberaniannya melawan Belanda dan membela nilai-nilai Islam. Ia diasingkan oleh Belanda dan wafat di Minahasa, Sulawesi Utara.</p>
+      </div>
+    <div class="kisahsejarah-item">
+      <img src="image/Sekolah Thawalib.jpg" alt="Sekolah Thawalib" />
+      <p><h1>Sekolah Thawalib</h1>Sebuah sekolah Islam modern di Padang Panjang yang menjadi pusat pendidikan dan pemikiran kebangsaan. Banyak tokoh pergerakan nasional berasal dari sini.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kisah sejarah provinsi sumatera utara  -->
+  <div id="kisahsejarah-sumut" class="konten-sejarah" style="display:none;">
+    <h2>Sumatera Utara</h2>
+    <div class="kisahsejarah-list">
+    <div class="kisahsejarah-item">
+    <img src="image/pemuda medan.jpg" alt="Pemuda Medan 1945" />
+    <p><h1>Pemuda Medan 1945</h1>Setelah proklamasi kemerdekaan, pemuda-pemuda Medan menghadapi tentara Belanda dan Inggris dalam mempertahankan kemerdekaan. Pertempuran ini dikenal sebagai bagian dari Medan Area.</p>
+      </div>
+ <div class="kisahsejarah-item">
+    <img src="image/perang batak.jpeg" alt="Perang Batak" />
+    <p><h1>Perang Batak</h1>Perang Batak adalah perang antar rakyat Batak dengan pasukan Belanda di Batak, Sumatera pada 1878-1907. Perang ini dipimpin oleh Raja Sisingamangaraja XII. Pada awalnya, Batak adalah salah satu wilayah di Sumatera yang belum dikuasai oleh Belanda.</p>
+      </div>
+ <div class="kisahsejarah-item">
+      <img src="image/Raja Sisingamangaraja XII Pahlawan Nasional dari Tanah Batak.jpeg" alt="Sisingamangaraja XII" />
+      <p><h1>Sisingamangaraja XII</h1>Patuan Bosar Sinambela Ginoar Ompu Pulo Batu , lebih dikenal sebagai Si Singamangaraja XII (18 Februari 1845 – 17 Juni 1907), adalah pendeta-raja terakhir suku Batak di Sumatera Utara . Dalam perjalanannya berperang gerilya melawan penjajahan Belanda di Sumatera sejak tahun 1878 dan seterusnya, ia tewas dalam pertempuran kecil dengan pasukan Belanda pada tahun 1907.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kisah sejarah provinsi jawa tengah  -->
+  <div id="kisahsejarah-jateng" class="konten-sejarah" style="display:none;">
+    <h2>Jawa Tengah</h2>
+      <div class="kisahsejarah-list">
+      <div class="kisahsejarah-item">
+      <img src="image/perang diponogoro.jpeg" alt="Perang Diponegoro" />
+      <p><h1>Perang Diponegoro</h1>Perang besar antara Pangeran Diponegoro dan pemerintah kolonial Belanda. Perang ini melibatkan rakyat Jawa dan berlangsung di berbagai wilayah Jawa Tengah seperti Magelang, Yogyakarta, dan sekitarnya.</p>
+      </div>
+ <div class="kisahsejarah-item">
+      <img src="image/Keraton Surakarta Ca_1910.jpeg" alt="Keraton Surakarta" />
+      <p><h1>Keraton Surakarta</h1>Keraton Kasunanan Surakarta merupakan pusat kekuasaan tradisional Mataram Islam setelah pembagian kerajaan. Ia memainkan peran penting dalam sejarah budaya dan politik di Jawa Tengah sejak abad ke-18.</p>
+      </div>
+ <div class="kisahsejarah-item">
+      <img src="image/kartini.jpeg" alt="RA Kartini" />
+      <p><h1>RA Kartini</h1>Lahir di Jepara, Raden Ajeng Kartini adalah pelopor emansipasi wanita Indonesia. Ia dikenal karena gagasannya tentang pendidikan dan kesetaraan hak bagi perempuan pada masa kolonial.</p>
+      </div>
+    </div>
+  </div>
+
+<!-- Kisah sejarah provinsi banten  -->
+  <div id="kisahsejarah-banten" class="konten-sejarah" style="display:none;">
+    <h2>Banten</h2>
+    <div class="kisahsejarah-list">
+      <div class="kisahsejarah-item">
+      <img src="image/Sultan Ageng Tirtayasa.jpeg" alt="Sultan Ageng Tirtayasa" />
+      <p><h1>Sultan Ageng Tirtayasa</h1>Sultan Ageng Tirtayasa adalah raja Kesultanan Banten yang terkenal karena perlawanan gigihnya terhadap VOC Belanda pada abad ke-17. Ia berjuang mempertahankan kedaulatan dan kemakmuran Banten.</p>
+      </div>
+   <div class="kisahsejarah-item">
+      <img src="image/Keraton Kaibon.jpeg" alt="Keraton Kaibon"/>
+      <p><h1>Keraton Kaibon</h1>Keraton Kaibon adalah istana peninggalan Kesultanan Banten yang dibangun untuk Ratu Aisyah, ibu dari Sultan Syafiudin. Meskipun kini tinggal reruntuhan, keraton ini menjadi saksi kemegahan masa lalu Banten.</p>
+      </div>
+    <div class="kisahsejarah-item">
+      <img src="image/Perang Banten vs VOC.jpg" alt="Perang Banten vs VOC"/>
+      <p><h1>Perang Banten vs VOC</h1>Konflik antara Kesultanan Banten dan VOC memuncak pada abad ke-17 karena perebutan kekuasaan dan perdagangan. Perang ini mengakhiri kedaulatan Banten secara perlahan dan memperkuat dominasi Belanda di wilayah tersebut.</p>
+      </div>
+    </div>
+  </div>
+
+<!-- Kisah sejarah provinsi jawa barat  -->
+  <div id="kisahsejarah-jabar" class="konten-sejarah" style="display:none;">
+    <h2>Jawa Barat</h2>
+    <div class="kisahsejarah-list">
+       <div class="kisahsejarah-item">
+      <img src="image/Prabu Siliwangi dan Kerajaan Pajajaran.jpeg" alt="Prabu Siliwangi">
+      <p><h1>Prabu Siliwangi dan Kerajaan Pajajaran</h1>Prabu Siliwangi adalah raja besar dari Kerajaan Pajajaran yang memerintah di wilayah Jawa Barat pada abad ke-15. Ia dikenal sebagai pemimpin bijaksana dan menjadi simbol budaya Sunda hingga kini.</p>
+      </div>
+ <div class="kisahsejarah-item">
+      <img src="image/Perang-bubat-majapahit-sunda.jpg" alt="Perang Bubat">
+      <p><h1>Perang Bubat</h1>Perang Bubat adalah konflik tragis antara Majapahit dan Sunda yang terjadi pada abad ke-14, akibat kesalahpahaman diplomatik dalam rencana pernikahan antara Dyah Pitaloka (putri Sunda) dan Raja Majapahit.</p>
+      </div>
+ <div class="kisahsejarah-item">
+      <img src="image/otto_iskandardinata.jpg" alt="Otto Iskandardinata">
+      <p><h1>Otto Iskandardinata</h1>Otto adalah tokoh pejuang asal Jawa Barat dan anggota BPUPKI yang berperan dalam perumusan kemerdekaan Indonesia. Ia dikenal sebagai “Si Jalak Harupat” dan menjadi pahlawan nasional Indonesia.</p>
+      </div>
+   </div>
+ </div>
+
+<!-- Kisah sejarah provinsi sulawesi selatan  -->
+  <div id="kisahsejarah-sulsel" class="konten-sejarah" style="display:none;">
+    <h2>Sulawesi Selatan</h2>
+    <div class="kisahsejarah-list">
+      <div class="kisahsejarah-item">
+      <img src="image/Perjuangan Sultan Hasanuddin_ Pahlawan dari Tanah Makassar.jpeg" alt="Perlawanan Sultan Hasanuddin " />
+      <p><h1>Perlawanan Sultan Hasanuddin </h1>Sultan Hasanuddin memimpin Kerajaan Gowa (Makassar) melawan penjajahan Belanda (VOC) pada abad ke-17.Ia dikenal karena keberaniannya dalam Perang Makassar (1666–1669).Dijuluki "Ayam Jantan dari Timur" karena kegigihannya di medan perang.Meskipun akhirnya kalah dan menandatangani Perjanjian Bongaya, ia dikenang sebagai Pahlawan Nasional Indonesia.</p>
+      </div>
+  <div class="kisahsejarah-item">
+      <img src="image/arung palaka.jpeg" alt="Arung Palakka" />
+      <p><h1>Arung Palakka</h1>Kerajaan Bone adalah kerajaan Bugis yang kuat.Dipimpin oleh Arung Palakka, yang dulunya pernah ditindas oleh Gowa.Arung Palakka kemudian bersekutu dengan VOC Belanda untuk mengalahkan Gowa.Setelah menang, Bone menjadi kekuatan dominan di Sulawesi Selatan. Kisah ini menggambarkan konflik internal antara kerajaan-kerajaan lokal.</p>
+      </div>
+  <div class="kisahsejarah-item">
+      <img src="image/3 datok penyebar aga islam.webp" alt="Penyebaran Islam " />
+      <p><h1>Penyebaran Islam </h1>Islam masuk ke Sulawesi Selatan pada awal abad ke-17.Dibawa oleh Datuk Ri Bandang, Datuk Ri Tiro, dan Datuk Ri Patimang dari Minangkabau (Sumatera Barat).Raja Gowa dan Tallo adalah raja pertama yang masuk Islam.Setelah itu, Islam menyebar ke kerajaan-kerajaan lain seperti Bone, Wajo, dan Soppeng.Islam menjadi agama mayoritas di Sulawesi Selatan hingga sekarang.</p>
+      </div>
+     </div>
+   </div>
+
+<!-- Kisah sejarah provinsi bali  -->
+  <div id="kisahsejarah-bali" class="konten-sejarah" style="display:none;">
+    <h2>Bali</h2>
+    <div class="kisahsejarah-list">
+   <div class="kisahsejarah-item">
+      <img src="image/Kerajaan Gelgel.jpg" alt="Kerajaan Gelgel" />
+      <p><h1>Kerajaan Gelgel</h1>Kerajaan Gelgel merupakan salah satu kerajaan Hindu terbesar di Bali yang berkuasa sekitar abad ke-14 hingga 17. Raja yang terkenal adalah Dalem Waturenggong, di bawah pemerintahannya Bali mencapai masa kejayaan dan menjalin hubungan dagang dengan kerajaan luar seperti Makassar dan Maluku. Gelgel menjadi pusat politik dan budaya Bali saat itu.</p>
+      </div>
+  <div class="kisahsejarah-item">
+      <img src="image/Perang Puputan Badung (1906).avif" alt="Perang Puputan Badung (1906)" />
+      <p><h1>Perang Puputan Badung (1906)</h1>Perang Puputan Badung terjadi saat pasukan Belanda menyerang Puri Denpasar. Raja dan keluarga kerajaan melakukan "puputan", yaitu perlawanan sampai mati daripada menyerah. Mereka mengenakan pakaian putih dan berjalan menuju tentara Belanda sambil membawa keris. Peristiwa heroik ini dikenang sebagai simbol keberanian rakyat Bali melawan penjajahan.</p>
+      </div>
+  <div class="kisahsejarah-item">
+      <img src="image/Perang Puputan Klungkung (1908)1.jpg" alt="Perang Puputan Klungkung (1908)" />
+      <p><h1>Perang Puputan Klungkung (1908)</h1>Mirip dengan Puputan Badung, perlawanan terakhir terhadap kolonialisme Belanda terjadi di Klungkung. Raja Klungkung dan pengikutnya memilih gugur dalam puputan daripada menyerah. Setelah perang ini, seluruh Bali berada di bawah kekuasaan Hindia Belanda. Puputan Klungkung menjadi simbol kehormatan dan perjuangan rakyat Bali.</p>
+      </div>
+     </div>
+   </div>
+
+   <!-- Kisah sejarah provinsi Papua  -->
+  <div id="kisahsejarah-papua" class="konten-sejarah" style="display:none;">
+    <h2>Papua</h2>
+    <div class="kisahsejarah-list">
+      <div class="kisahsejarah-item">
+      <img src="image/Papua dalam Penjajahan Belanda.jpeg" alt="Papua dalam Penjajahan Belanda" />
+      <p><h1>Papua dalam Penjajahan Belanda</h1>Sejak tahun 1828, Belanda secara resmi mengklaim wilayah Papua Barat dan membangun pos di Fakfak dan Manokwari. Namun, kekuasaan Belanda baru benar-benar dirasakan oleh penduduk Papua pada awal abad ke-20, ketika mereka mulai membangun infrastruktur dan menjalankan misi Kristen di daerah pedalaman.</p>
+      </div>
+  <div class="kisahsejarah-item">
+      <img src="image/Penyerahan Papua ke PBB dan Indonesia (1962–1969).jpg" alt="Penyerahan Papua ke PBB dan Indonesia (1962–1969)" />
+      <p><h1>Penyerahan Papua ke PBB dan Indonesia (1962–1969)</h1>Setelah Indonesia merdeka, wilayah Papua menjadi sengketa antara Indonesia dan Belanda. Pada tahun 1962, melalui Perjanjian New York, Belanda menyerahkan Papua kepada PBB yang kemudian menyerahkannya ke Indonesia pada 1963. Pada 1969, dilakukan Pepera (Penentuan Pendapat Rakyat) yang menyatakan Papua sebagai bagian dari Indonesia, meskipun pelaksanaannya menuai kontroversi hingga kini.</p>
+      </div>
+  <div class="kisahsejarah-item">
+      <img src="image/Kedatangan Misionaris Kristen (1855).jpg" alt="Kedatangan Misionaris Kristen (1855)" />
+      <p><h1>Kedatangan Misionaris Kristen (1855)</h1>Pada 5 Februari 1855, dua misionaris dari Jerman, Carl Wilhelm Ottow dan Johann Gottlob Geissler, tiba di Pulau Mansinam, Manokwari. Ini menandai awal penyebaran agama Kristen di Papua. Peristiwa ini sangat penting bagi masyarakat Papua dan hingga kini diperingati setiap tahun sebagai Hari Pekabaran Injil di Tanah Papua.</p>
+      </div>
+     </div>
+   </div>
+</section>
+
+ <a href="https://wa.me/6283808627449" class="wa-float" target="_blank">
+  <img src="image/whatsapp-logo-png-hd-2.png" alt="WhatsApp">
+</a>
+
+  <footer>
+    <p>Indonesian Provincial Heritage</p>
+  </footer>
+</body>
+</html>

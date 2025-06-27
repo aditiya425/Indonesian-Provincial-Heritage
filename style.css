@@ -1,0 +1,1200 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  background: #f9e4c8;
+}
+
+/* ========== HEADER ========== */
+header {
+  background-image: url('image/bendera merah putih dan peta indonesia.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 10px 20px 20px;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+header h1, header nav {
+  position: relative;
+  z-index: 1;
+  padding-top: 8px;
+}
+
+/* ========== NAVIGATION ========== */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  margin-top: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav a.active {
+  border-bottom: 2px solid white;
+  padding-bottom: 3px;
+}
+
+nav button,
+.daftar-provinsi button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #f77f00;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+nav button:hover,
+.daftar-provinsi button:hover {
+  background-color: #fcbf49;
+}
+
+/* ========== SECTION ========== */
+.section {
+  padding: 40px 20px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s, transform 0.5s;
+  display: none;
+}
+
+.section.aktif {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========== BERANDA ========== */
+.beranda-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #faebd7;
+}
+
+.beranda-section h2 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+.beranda-section p {
+  font-size: 1.1em;
+  margin-bottom: 30px;
+  max-width: 700px;
+}
+
+.gambar-beranda {
+  width: 95%;
+  max-width: 1000px;
+  border-radius: 20px;
+  margin: 20px auto;
+  display: block;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.gambar-beranda:hover {
+  transform: scale(1.02);
+}
+
+
+/* ========== KULINER ========== */
+.kuliner-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.kuliner-item {
+  width: 220px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 48px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.kuliner-item img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.kuliner-item:hover,
+.kuliner-item:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.keterangan {
+  display: none;
+  margin-top: 10px;
+  background-color: #fff0e6;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+.kuliner-provinsi {
+  margin-top: 20px;
+  background-color: #fff0e6;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.kuliner-provinsi img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.kuliner-provinsi .kuliner-item {
+  margin-bottom: 20px;
+}
+
+/* ========== BUDAYA ========= */
+.budaya-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.budaya-item {
+  width: 220px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.budaya-item img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.budaya-item:hover {
+  transform: scale(1.05);
+}
+
+.konten-budaya {
+  margin-top: 20px;
+  background-color: #fff0e6;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.konten-budaya img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/*======== sejarah ===*/
+
+
+
+
+/* ========== FORM ULASAN ========== */
+form#form-ulasan {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form-ulasan input,
+#form-ulasan textarea {
+  width: 80%;
+  max-width: 500px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#form-ulasan button {
+  padding: 10px 20px;
+  background-color: #d94f30;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* ========== FOother ===== */
+footer {
+  position: relative;
+  background-image: url('image/indonesia.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+  overflow: hidden;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* efek gelap */
+  z-index: 0;
+}
+
+footer p,
+footer a {
+  position: relative;
+  z-index: 1;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+footer img {
+  width: 28px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+
+/* ========== RESPONSIVE ========== */
+@media screen and (max-width: 768px) {
+  .kuliner-item {
+    width: 90%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* ========== WHATSAPP FLOATING ICON ========== */
+.wa-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.wa-float img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.wa-float img:hover {
+  transform: scale(1.1);
+}
+
+.sejarah-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px;
+}
+
+.sejarah-list {
+   display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* ========== HEADER ========== */
+header {
+  background-image: url('image/bendera merah putih dan peta indonesia.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 10px 20px 20px;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+header h1, header nav {
+  position: relative;
+  z-index: 1;
+  padding-top: 8px;
+}
+
+/* ========== NAVIGATION ========== */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  margin-top: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav a.active {
+  border-bottom: 2px solid white;
+  padding-bottom: 3px;
+}
+
+nav button,
+.daftar-provinsi button {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #f77f00;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+nav button:hover,
+.daftar-provinsi button:hover {
+  background-color: #fcbf49;
+}
+
+/* ========== SECTION ========== */
+.section {
+  padding: 40px 20px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s, transform 0.5s;
+  display: none;
+}
+
+.section.aktif {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========== BERANDA ========== */
+.welcome-section h1 {
+  margin-top: 10px;
+}
+
+.gambar-beranda {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 15px;
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ========== KULINER ========== */
+.kuliner-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.kuliner-item {
+  width: 220px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 48px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.kuliner-item img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.kuliner-item:hover,
+.kuliner-item:hover img {
+  transform: scale(1.03);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+.keterangan {
+  display: none;
+  margin-top: 10px;
+  background-color: #fff0e6;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+.kuliner-provinsi {
+  margin-top: 20px;
+  background-color: #fff0e6;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.kuliner-provinsi img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.kuliner-provinsi .kuliner-item {
+  margin-bottom: 20px;
+}
+
+/* ========== BUDAYA & GALERI ========== */
+.budaya-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.budaya-item {
+  width: 220px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.budaya-item img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.budaya-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+.konten-budaya, .konten-galeri {
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.0); /* 0.5 = 50% transparan */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+ transition: transform 0.3s ease;
+}
+
+
+.konten-budaya img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.judul-item {
+  margin-top: 10px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #333;
+}
+
+
+
+/* ========== FORM ULASAN ========== */
+form#form-ulasan {
+  margin: 40px auto;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+#form-ulasan input,
+#form-ulasan textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+#form-ulasan textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+#form-ulasan button {
+  background-color: #d94f30;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+#form-ulasan button:hover {
+  background-color: #f77f00;
+}
+
+@media (max-width: 600px) {
+  form#form-ulasan {
+    padding: 16px;
+  }
+
+  #form-ulasan input,
+  #form-ulasan textarea {
+    font-size: 0.95rem;
+  }
+
+  #form-ulasan button {
+    font-size: 0.95rem;
+    padding: 10px 16px;
+  }
+}
+
+
+
+/* ========== FOOTER ========== */
+footer {
+  background-color: #d94f30;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+}
+
+footer img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+
+
+
+/* ========== DARK MODE ========== */
+body.dark {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+body.dark .kuliner-item {
+  background-color: #333;
+  color: white;
+}
+
+/* ========== RESPONSIVE ========== */
+@media screen and (max-width: 768px) {
+  .kuliner-item {
+    width: 90%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* ========== WHATSAPP FLOATING ICON ========== */
+.wa-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.wa-float img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.wa-float img:hover {
+  transform: scale(1.1);
+}
+
+.kisahsejarah-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px;
+}
+
+.kisahsejarah-item img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.kisahsejarah-item:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.sejarah-provinsi {
+  margin-top: 20px;
+  background-color: #fff0e6;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.sejarah-provinsi img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.sejarah-provinsi .kisahsejarah-item {
+  margin-bottom: 20px;
+}
+
+.sejarah-item img {
+ width: 220px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.sejarah-item:hover,
+.sejarah-item:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.keterangan {
+  display: none;
+  margin-top: 10px;
+  background-color: #fff0e6;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+.sejarah-provinsi {
+  margin-top: 20px;
+  background-color: #fff0e6;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.sejarah-provinsi img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.sejarah-provinsi .sejarah-item {
+  margin-bottom: 20px;
+}
+
+.beranda-section {
+  background-image: url('image/bali beranda.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+
+
+.beranda-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* efek gelap supaya teks kontras */
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.beranda-overlay h2 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.beranda-overlay p {
+  font-size: 1.2rem;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.jelajahi-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.cta-button {
+  background-color: #f77f00;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.cta-button:hover {
+  background-color: #fcbf49;
+}
+
+.back-to-home {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: rgba(255, 255, 255, 0.2); /* transparan putih */
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 999;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  backdrop-filter: blur(4px); /* efek blur belakang */
+  transition: background-color 0.3s ease;
+}
+
+.back-to-home:hover {
+  background-color: #fcbf49;
+}
+
+/* === FULL BACKGROUND DI BERANDA === */
+body.beranda {
+  background-image: url('image/bali beranda.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+/* === HEADER TRANSPARAN DI BERANDA === */
+body.beranda header {
+  background: transparent;
+  box-shadow: none;
+  position: relative;
+  z-index: 1000;
+}
+
+body.beranda header::before {
+  background: transparent;
+}
+
+body.beranda nav a {
+  color: white;
+}
+body.beranda nav a:hover {
+  color: #fcbf49;
+}
+
+/* === BERANDA SECTION === */
+.beranda-section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.beranda-overlay {
+  background: none !important;
+  padding: 30px;
+  border-radius: 0 !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+
+.beranda-overlay h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.beranda-overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.jelajahi-wrapper {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  background-color: #f77f00;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.cta-button:hover {
+  background-color: #fcbf49;
+}
+
+/* === FOOTER TRANSPARAN DI BERANDA === */
+body.beranda footer {
+  background: transparent;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+body.beranda footer::before {
+  background: transparent;
+}
+
+body.beranda footer img {
+  filter: drop-shadow(0 0 2px black);
+}
+
+/* ========== BACKGROUND UNTUK SEMUA HALAMAN ========== */
+body.bg-indonesia {
+  background-image: url('image/beranda 3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+}
+
+/* Jika ingin teks konten tetap mudah dibaca */
+body.bg-indonesia main,
+body.bg-indonesia section,
+body.bg-indonesia .konten {
+  background-color: rgba(0, 0, 0, 0.5); /* efek gelap */
+  padding: 30px;
+  border-radius: 10px;
+  color: white;
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+body.bg-indonesia header,
+body.bg-indonesia footer {
+  background: transparent;
+  box-shadow: none;
+  color: white;
+}
+
+body.bg-indonesia nav a {
+  color: white;
+}
+
+body.bg-indonesia footer img {
+  filter: drop-shadow(0 0 2px black);
+}
+
+.judul-item {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+  color: #000; /* ganti jadi #333 kalau background putih */
+}
+
+.budaya-item p,
+.kuliner-item p,
+.sejarah-item p {
+  display: block;
+  font-size: 0.95em;
+  color: #000;
+  margin-top: 8px;
+}
+
+.konten-budaya h3,
+.konten-kuliner h3,
+.konten-sejarah h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;         
+  background-color: #fff8f0;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 30px auto 20px;
+  max-width: 400px;
+}
+
+.budaya-item img,
+.sejarah-item img {
+ width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.budaya-item img:hover,
+.sejarah-item img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+.sejarah-item h3, 
+.sejarah-item h4, 
+.sejarah-item p, 
+.provinsi-title {
+  color:#fff !important;         /* Warna teks jadi gelap dan terbaca */
+  opacity: 1 !important;          /* Pastikan tidak transparan */
+}
+
+.sejarah-item {
+  background-color: #fdebd0;      /* Latar kisah bisa lembut */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.sejarah-item h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #222;
+}
+
+.sejarah-item p {
+  color: #444;
+  line-height: 1.6;
+}
+
+.sejarah-item img {
+  display: block;           /* penting agar bisa diberi margin auto */
+  margin: 0 auto;           /* memposisikan di tengah */
+  width: 20%;              /* isi lebar container */
+  max-width: 20%;          /* hindari overflow */
+  height: auto;             /* proporsional sesuai aslinya */
+  object-fit: cover;        /* potong bagian tak perlu agar penuh */
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.budaya-item img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background-color: #fff; /* opsional biar rapi */
+  border-radius: 8px;
+}
+
+
+.budaya-item img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2); /* saat hover */
+}
+
+.galeri-item {
+  width: 240px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  margin: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.galeri-item img {
+  width: 100%;
+  height: 140px;
+  object-fit: contain;
+  background-color: #fff; /* opsional, biar latar belakang putih */
+  border-radius: 8px;
+}
+
+
+.galeri-caption {
+  font-size: 14px;
+  color: #333;
+  padding: 10px;
+  background-color: #f9f9f9;
+  margin: 0;
+}
+
+body.beranda nav ul li:not(:has(a[href="index.html"])) {
+  display: none;
+}
+
+body.beranda .hide-di-beranda {
+  display: none;
+}
+
+form#form-ulasan {
+  background: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+  max-width: 600px !important;
+  color: white !important;
+}
+
+/* HILANGKAN background pembungkus form (kalau ada) */
+body.bg-indonesia main,
+body.bg-indonesia section,
+body.bg-indonesia .konten {
+  background: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+
+@media screen and (max-width: 768px) {
+  .kuliner-item {
+    width: 50% !important;
+  }
+
+  .kuliner-item img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+}
+
+.kisahsejarah-item {
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 800px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.kisahsejarah-item img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .kisahsejarah-item {
+    padding: 15px;
+    margin: 15px;
+  }
+
+  .kisahsejarah-item img {
+    max-width: 90%;
+  }
+}
